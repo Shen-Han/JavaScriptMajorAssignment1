@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Major Assignment 1</title>
+
+<script type="text/javascript">
+
+</script>
+
+</head>
+<body>
+<script type="text/javascript">
+
+//Question 1
+
+var person = {
+		name: "Adam Smith",
+		age: 30,
+		rollno : 20,
+		course: "JavaScript"
+		}
+		
+		//Use delete function. 
+		
+		delete person.course;
+		
+		console.log(person);
+		
+//Question 2
+
+//Use parseInt to convert input to intergers, no error exception handling present.
+
+var a = prompt ("Please enter a number.");
+var b = prompt ("Please enter another number.");
+
+function tenCheck(){
+	if (a == 10 || b == 10){
+		return true; 
+	} else if (parseInt(a)+parseInt(b) == 10){
+		return true;
+	} else return false;
+}
+
+document.write(tenCheck());
+
+//Question 3
+
+//a)
+//Use filter function to find all array items that has a modulous 2 of 0, ie. they are even. 
+var array1 = [5,7,9,2,10,18];
+
+var evenNumbers = array1.filter(function(x) {
+	return x%2 ==0;
+})
+
+console.log(evenNumbers);
+
+
+//b)
+//Use a standard array sorting scheme to find the largest in the evenNumbers array from above.
+
+var largest = 0;
+
+for (var i = 0; i<evenNumbers.length; i++){
+	if(evenNumbers[i]>largest){
+		
+	largest = evenNumbers[i];
+	}
+}
+
+console.log(largest);
+
+//Question 4
+
+//Don't think the below program is what the question is asking. 
+//array1.push(Question4String);
+//console.log (array1.length);
+//Assuming professor you just want me to add two numbers in quotes and return as int? 
+		
+//var result;		
+function calc(){
+	var result = parseInt(a)+parseInt(b);
+	return parseInt(result);
+}
+console.log(calc());
+
+//Question 5
+
+var lastElement = array1[array1.length -1];
+console.log (lastElement);
+</script>
+
+
+
+
+</body>
+</html>
