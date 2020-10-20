@@ -1,0 +1,30 @@
+Question 1 
+{…}
+age: 30
+name: "Adam Smith"
+rollno: 20
+<prototype>: Object { … }
+
+
+Question 2 
+true 
+
+Question 3 
+a) 
+(3) […]
+0: 2
+1: 10
+2: 18
+length: 3
+<prototype>: Array []
+
+b) 
+18 
+
+Question 4 
+20 
+
+Question 5 
+18
+​
+
