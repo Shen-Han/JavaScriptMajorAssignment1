@@ -21,7 +21,15 @@ var person = {
 		course: "JavaScript"
 		}
 		
+		//Use delete function. 
+		
+		delete person.course;
+		
+		console.log(person);
+		
 //Question 2
+
+//Use parseInt to convert input to intergers, no error exception handling present.
 
 var a = prompt ("Please enter a number.");
 var b = prompt ("Please enter another number.");
@@ -38,7 +46,33 @@ document.write(tenCheck());
 
 //Question 3
 
+//a)
+//Use filter function to find all array items that has a modulous 2 of 0, ie. they are even. 
+var array1 = [5,7,9,2,10,18];
+
+var evenNumbers = array1.filter(function(x) {
+	return x%2 ==0;
+})
+
+console.log(evenNumbers);
+
+
+//b)
+//Use a standard array sorting scheme to find the largest in the evenNumbers array from above.
+
+var largest = 0;
+
+for (var i = 0; i<evenNumbers.length; i++){
+	if(evenNumbers[i]>largest){
+		
+	largest = evenNumbers[i];
+	}
+}
+
+console.log(largest);
+
 //Question 4
+
 
 //Question 5
 
